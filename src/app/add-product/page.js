@@ -4,9 +4,9 @@ import { v2 as cloudinary } from "cloudinary";
 import getPosts from "../lib/getPosts";
 
 cloudinary.config({
-  cloud_name: "dihbojmlf",
-  api_key: "567197454719143",
-  api_secret: "g3qtvKOJ9y1A79GChrt3UrKXS3Y",
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
 const posts = await getPosts();
