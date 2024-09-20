@@ -21,8 +21,8 @@ function Card({ title, body, id, image }) {
             src={image}
             width={500}
             height={300}
-            alt="Picture of the author"
-            className="my-4 rounded-xl"
+            alt={title}
+            className="my-4 rounded-xl max-h-36 object-cover"
           />
           <h4 className="text-2xl ">{title}</h4>
           <hr className="mt-4" />

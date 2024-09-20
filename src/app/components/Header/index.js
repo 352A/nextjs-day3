@@ -7,6 +7,7 @@ function Header() {
     { title: "About", href: "/about" },
     { title: "Contact Us", href: "/contact" },
     { title: "Login", href: "/login" },
+    { title: "Add Product", href: "/add-product" },
   ];
   return (
     <header className="bg-slate-100">
